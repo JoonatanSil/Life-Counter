@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexWrap: "wrap",
         backgroundColor: "black",
-        padding: 15,
-        paddingTop: 50,
+        paddingHorizontal: windowWidth * 0.05,
+        paddingTop: windowHeight * 0.10,
     },
 });
 
