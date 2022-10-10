@@ -1,10 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CounterScreen from './screens/CounterScreen';
+import MenuScreen from './screens/MenuScreen';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <CounterScreen />
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Counter" component={CounterScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Menu" component={MenuScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
