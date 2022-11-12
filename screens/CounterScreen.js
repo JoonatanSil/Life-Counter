@@ -13,16 +13,16 @@ const CounterScreen = ({ navigation }) => {
             </TouchableOpacity>
             <View style={styles.lifeContainer}>
                 <PlayerLife
-                    color="green"
+                    color="black"
                 />
                 <PlayerLife
-                    color="blue"
-                />
-                <PlayerLife
-                    color="red"
+                    color="black"
                 />
                 <PlayerLife
                     color="yellow"
+                />
+                <PlayerLife
+                    color="red"
                 />
             </View>
         </SafeAreaView>
