@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
 
-const MenuItem = (props) => {
+const MenuItem = (props, { navigation }) => {
     return (
         <View style={{}}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => props.navigation.navigate(props.destination)}>
                 <Text style={{ color: "white" }}>
-                    Click here to do thing!
+                    {props.name}
                 </Text>
             </TouchableOpacity>
         </View>

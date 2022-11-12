@@ -12,7 +12,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Debt" component={DebtScreen} options={{ headerShown: false }}></Stack.Screen>
+        <Stack.Screen name="Debt" component={DebtScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Counter" component={CounterScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Menu" component={MenuScreen} />
       </Stack.Navigator>

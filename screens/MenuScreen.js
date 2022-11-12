@@ -6,11 +6,11 @@ import PlayerLife from '../components/PlayerLife';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-const MenuScreen = () => {
+const MenuScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
-            <MenuItem />
-            <MenuItem />
+            <MenuItem name={"Counter"} destination={"Counter"} navigation={navigation} />
+            <MenuItem name={"Debt"} destination={"Debt"} navigation={navigation} />
             <MenuItem />
             <MenuItem />
             <MenuItem />
