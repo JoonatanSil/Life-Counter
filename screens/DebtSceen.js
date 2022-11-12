@@ -19,28 +19,52 @@ const CounterScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: "black",
-        paddingHorizontal: windowWidth * 0.05,
-        paddingTop: windowHeight * 0.1,
+        marginTop: 10,
+        marginHorizontal: 10,
+        backgroundColor: "#D9D9D9",
+        height: windowHeight * 0.9,
+        borderRadius: 10,
+        padding: 10,
+        justifyContent: "space-between",
     },
     header: {
-        flex: 1,
-        flexDirection: "row",
-    },
-    headerText: {
-        color: "white",
+        // fontStyle: "italic",
         fontWeight: "bold",
-        fontSize: 36
+        fontSize: 24,
+        color: "#17A1FA",
+        borderBottomWidth: 1,
+        borderBottomColor: "#17A1FA",
+        paddingBottom: 5,
+        marginBottom: 10,
     },
-    menuButton: {
-        paddingHorizontal: windowWidth * 0.05,
-        //paddingTop: windowHeight * 0.10,
+    inputHeader: {
+        padding: 15,
+        width: "100%",
+        borderWidth: 2,
+        borderColor: "#17A1FA",
+        borderRadius: 10,
     },
-    menuButtonText: {
-        paddingHorizontal: windowWidth * 0.05,
-        //paddingTop: windowHeight * 0.10,
-        color: "white",
+    inputBody: {
+        padding: 15,
+        width: "100%",
+        height: "50%",
+        borderWidth: 2,
+        borderColor: "#17A1FA",
+        textAlignVertical: "top",
+        borderRadius: 10,
+    },
+    postButton: {
+        padding: 15,
+        width: "100%",
+        backgroundColor: "#17A1FA",
+        borderRadius: 10,
+    },
+    postButtonText: {
+        color: "#FFF",
+        fontWeight: "bold",
+        fontSize: 18,
+        alignSelf: "center",
     },
 });
+
 export default CounterScreen;
