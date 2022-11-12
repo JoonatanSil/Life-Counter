@@ -40,7 +40,61 @@ export default function AddJournalModal(props) {
                 </TouchableOpacity>
 
                 <Text style={styles.header}>Kirjoita päiväkirjaan</Text>
+                import React, {useState} from 'react';
+                import {Modal, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
+                import AddJournalModal from '../components/AddJournalModal';
 
+                export default function JournalScreen() {
+    const [journalList, setJournalList] = useState([]);
+                const [showModal, setShowModal] = useState(false);
+
+    const modalVisibility = () => setShowModal(!showModal);
+
+    const handleJournalEntry = (text) => setJournalList(listItems => [...listItems, text])
+
+                return (
+                <View style={styles.container}>
+                    <Text>Päiväkirjat tähän!</Text>
+                    {journalList.map((element) =>
+                        <View style={styles.journal}>
+                            <Text style={styles.journalText}>{element}</Text>
+                        </View>
+                    )}
+
+                    <TouchableOpacity
+                        onPress={() => modalVisibility()}
+                        style={styles.addJournalButton}
+                    >
+                        <Text>Add new journal (modal)</Text>
+                    </TouchableOpacity>
+                    <AddJournalModal
+                        showModal={showModal}
+                        modalVisibility={modalVisibility}
+                        handleJournalEntry={handleJournalEntry}
+                    />
+                </View>
+                );
+}
+
+                const styles = StyleSheet.create({
+                    container: {
+                    flex: 1,
+                backgroundColor: '#fff',
+                alignItems: "center",
+    },
+                journal: {
+                    borderWidth: 2,
+                borderColor: "#000"
+    },
+                journalText: {
+                    fontSize: 18,
+    },
+                addJournalButton: {
+                    width: 150,
+                borderWidth: 2,
+                borderColor: "blue",
+    },
+});
                 <TextInput
                     style={styles.inputHeader}
                     onChangeText={onChangeHeader}
