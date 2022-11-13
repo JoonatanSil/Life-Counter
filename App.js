@@ -19,10 +19,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const yeet = () => {
+const Jonas = () => {
   return <p>merge</p>;
 };
 
-const tet = () => {
+const Osku = () => {
+  return <p>tot</p>;
+};
+const dontwork = () => {
   return <p>tot</p>;
 };
