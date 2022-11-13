@@ -19,6 +19,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const merge = () => {
-  return <p>yeet</p>;
+const yeet = () => {
+  return <p>merge</p>;
 };
