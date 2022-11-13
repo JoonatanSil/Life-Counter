@@ -1,6 +1,3 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-
 export default function App() {
   return (
     <View style={styles.container}>
@@ -9,23 +6,18 @@ export default function App() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
-
-const Jonas = () => {
-  return <p>merge</p>;
+const Automaatio = () => {
+  return "nada";
 };
-
-const Osku = () => {
-  return <p>tot</p>;
+const Automaatio1 = () => {
+  return "nada";
 };
-const dontwork = () => {
-  return <p>tot</p>;
+const Automaatio2 = () => {
+  return "nada";
+};
+const Automaatio3 = () => {
+  return "nada";
+};
+const Automaatio4 = () => {
+  return "nada";
 };
