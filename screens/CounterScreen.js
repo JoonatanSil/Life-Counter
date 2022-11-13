@@ -9,11 +9,11 @@ const CounterScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <TouchableOpacity style={styles.menuButton} onPress={() => navigation.navigate("Menu")}>
-                <Text style={styles.menuButtonText}>Menu</Text>
+                <Text style={styles.menuButtonText}>Menulaattori</Text>
             </TouchableOpacity>
-            <View style={styles.lifeContainer}>
+            <View styles={styles.lifeContainers}>
                 <PlayerLife
-                    color="green"
+                    color="yellow"
                 />
                 <PlayerLife
                     color="blue"
@@ -21,9 +21,8 @@ const CounterScreen = ({ navigation }) => {
                 <PlayerLife
                     color="red"
                 />
-                <PlayerLife
-                    color="yellow"
-                />
+
+                
             </View>
         </SafeAreaView>
     )
