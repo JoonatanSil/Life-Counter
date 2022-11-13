@@ -31,21 +31,21 @@ const CounterScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 3,
         flexWrap: "wrap",
         backgroundColor: "black",
     },
     menuButton: {
-        paddingHorizontal: windowWidth * 0.05,
+        paddingHorizontal: windowWidth * 0.5,
         paddingTop: windowHeight * 0.10,
     },
     lifeContainer: {
-        flex: 1,
+        flex: 2,
         flexWrap: "wrap",
-        paddingHorizontal: windowWidth * 0.05,
+        paddingHorizontal: windowWidth * 0.12,
     },
     menuButtonText: {
-        color: "white",
+        color: "pink",
     },
 });
 
