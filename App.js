@@ -22,3 +22,7 @@ const styles = StyleSheet.create({
 const yeet = () => {
   return <p>merge</p>;
 };
+
+const tet = () => {
+  return <p>tot</p>;
+};
