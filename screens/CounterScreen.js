@@ -8,7 +8,12 @@ const windowHeight = Dimensions.get('window').height;
 const CounterScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
+            backgroundColor: "black",
+        paddingHorizontal: windowWidth * 0.05,
             <TouchableOpacity style={styles.menuButton} onPress={() => navigation.navigate("Menu")}>
+            const windowWidth = Dimensions.get('window').width;
+            const windowHeight = Dimensions.get('window').height;
+            
                 <Text style={styles.menuButtonText}>Menulaattori</Text>
             </TouchableOpacity>
             <View styles={styles.lifeContainers}>
