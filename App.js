@@ -10,6 +10,11 @@ export default function App() {
   );
 }
 
+
+//tämä ei toimi suakeli
+
+export Math
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -22,3 +27,8 @@ const styles = StyleSheet.create({
 const merge = () => {
   return <p>yeet</p>;
 };
+
+const turha = () => {
+  return <p>yeet</p>;
+};
+
