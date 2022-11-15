@@ -5,7 +5,6 @@ import { Entypo } from "@expo/vector-icons";
 const MenuItem = (props) => {
     const [buttonPressed, setButtonPressed] = useState(false)
     const [moneyAmount, setMoneyAmount] = useState(0)
-    const [moneyDisplay, setMoneyDisplay] = useState(0)
 
     const plusMinus = (pressed) => {
         if (pressed === "plus") {
@@ -31,8 +30,8 @@ const MenuItem = (props) => {
 
     return (
         <View style={styles.container}>
-            <Text style={{ color: "white", marginRight: 70 }}>
-                Player name here -
+            <Text style={styles.playerName}>
+                {props.name}
             </Text>
             <View style={styles.debtButton} >
                 {buttonPressed &&
@@ -59,7 +58,13 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         margin: 10,
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent: "space-between"
+    },
+    playerName: {
+        color: "white",
+        marginRight: 120,
+        fontSize: 20,
     },
     debtButton: {
         flexDirection: "row",
@@ -80,3 +85,4 @@ const styles = StyleSheet.create({
 });
 
 export default MenuItem;
+
